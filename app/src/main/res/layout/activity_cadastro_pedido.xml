@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroPedidoActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/imglogohome" />
+
+    <!-- Título Cadastro de Pedido -->
+
+    <!-- CardView com os campos do pedido -->
+    <TextView
+        android:id="@+id/textCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cadastro de Pedido"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_pedido"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Campo Pedido -->
+            <TextView
+                android:id="@+id/text_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Pedido:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/inputs_texts"
+                android:hint="Digite o pedido"
+                android:inputType="text"
+                android:paddingStart="16dp" />
+
+            <!-- Campo Medidas -->
+            <TextView
+                android:id="@+id/text_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Medidas:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editMedidas"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/inputs_texts"
+                android:hint="Digite as medidas"
+                android:inputType="text"
+                android:paddingStart="16dp" />
+
+            <!-- Campo Valor -->
+            <TextView
+                android:id="@+id/text_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Valor:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editValor"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/inputs_texts"
+                android:hint="Digite o valor"
+                android:inputType="numberDecimal"
+                android:paddingStart="16dp" />
+
+            <!-- Campo Quantidade -->
+            <TextView
+                android:id="@+id/text_quantidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Quantidade:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editQuantidade"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/inputs_texts"
+                android:hint="Digite a quantidade"
+                android:inputType="number"
+                android:paddingStart="16dp" />
+
+            <!-- RadioGroup para forma de pagamento -->
+            <RadioGroup
+                android:id="@+id/radioGroupPagamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!-- RadioButton Pix -->
+                <RadioButton
+                    android:id="@+id/radioPix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pix"
+                    android:textSize="14sp" />
+
+                <!-- RadioButton Débito -->
+                <RadioButton
+                    android:id="@+id/radioDebito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Débito"
+                    android:textSize="14sp" />
+
+                <!-- RadioButton Crédito -->
+                <RadioButton
+                    android:id="@+id/radioCredito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Crédito"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <!-- Botão Confirmar -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_confirmar"
+                android:layout_width="304dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_button"
+                android:text="Confirmar"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
