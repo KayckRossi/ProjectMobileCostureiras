@@ -3,21 +3,21 @@
     <item
         android:id="@+id/nav_cadastrar_pedido"
         android:icon="@drawable/ic_add"
-        android:title="Cadastrar Pedido"/>
+        android:title="Cadastrar" />
     <item
         android:id="@+id/nav_manutencao_pedido"
         android:icon="@drawable/ic_edit"
-        android:title="Manutenção Pedido"/>
+        android:title="Manutenção" />
     <item
         android:id="@+id/nav_deletar_pedido"
         android:icon="@drawable/ic_delete"
-        android:title="Deletar Pedido"/>
+        android:title="Deletar" />
     <item
         android:id="@+id/nav_detalhes_pedido"
         android:icon="@drawable/ic_info"
-        android:title="Detalhes do Pedido"/>
+        android:title="Detalhes" />
     <item
         android:id="@+id/nav_contato"
         android:icon="@drawable/ic_contact"
-        android:title="Contato"/>
+        android:title="Contato" />
 </menu>

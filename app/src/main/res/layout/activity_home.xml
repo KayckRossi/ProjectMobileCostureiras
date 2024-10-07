@@ -5,6 +5,122 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homeActivity">
+    android:background="#FFE4E1"
+    tools:context=".HomeActivity">
+
+    <!-- Logo no topo -->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogohome" />
+
+    <!-- Layout em Grade para os Botões -->
+    <GridLayout
+        android:id="@+id/gridLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:paddingLeft="30dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <!-- Exemplo de Botão com Quadrado ao redor do Ícone -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrarPedido"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_add"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Pedido"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnManutencaoPedido"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_edit"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Manutenção"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDeletarPedido"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_delete"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Deletar"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDetalhesPedido"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_info"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Detalhes"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContato"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_contact"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Contato"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrarUsuario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_rosa"
+            android:drawableTop="@drawable/ic_user_add"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text=" Usuário"
+            android:textColor="#FF1493"
+            android:textSize="14sp" />
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

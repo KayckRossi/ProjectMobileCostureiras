@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE4E1"
     tools:context=".registrarActivity">
 
     <ImageView
@@ -56,21 +57,21 @@
 
             <!-- Campo Pedido -->
             <TextView
-                android:id="@+id/text_nome"
+                android:id="@+id/text_cpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Nome:"
+                android:text="CPF:"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editNome"
+                android:id="@+id/editCpf"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/inputs_texts"
-                android:hint="Digite seu nome "
+                android:hint="Digite seu cpf"
                 android:inputType="text"
                 android:paddingStart="16dp" />
 
@@ -144,10 +145,21 @@
                 android:layout_marginTop="24dp"
                 android:background="@drawable/rounded_button"
                 android:text="Confirmar"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFE4E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation_botton_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

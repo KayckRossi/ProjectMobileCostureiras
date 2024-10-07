@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-  
-</selector>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFC0CB"/> <!-- Cor de fundo rosa claro -->
+    <corners android:radius="20dp"/> <!-- Bordas arredondadas -->
+    <stroke android:width="2dp" android:color="#FF1493"/> <!-- Borda rosa -->
+</shape>

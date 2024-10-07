@@ -4,16 +4,16 @@
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="25dp"/> <!-- Mantém os cantos arredondados -->
-            <solid android:color="#000000"/> <!-- Cor de fundo do botão -->
+            <solid android:color="#Ffffff"/> <!-- Cor de fundo do botão -->
             <!-- Reduzi o padding para deixar a borda mais fina -->
-    <!--  <padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp"/> -->
- </shape>
-</item>
-<!-- Sombra do botão -->
+            <!--  <padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp"/> -->
+        </shape>
+    </item>
+    <!-- Sombra do botão -->
     <item android:bottom="1dp" android:right="1dp"> <!-- Reduzi a sombra para 1dp -->
         <shape android:shape="rectangle">
             <corners android:radius="25dp"/> <!-- Mantém os cantos arredondados -->
-            <solid android:color="#333333"/> <!-- Cor da sombra -->
+            <solid android:color="#FFC0CB"/> <!-- Cor da sombra -->
         </shape>
     </item>
 </layer-list>
