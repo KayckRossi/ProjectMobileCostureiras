@@ -10,40 +10,41 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/textCriarPedido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/imglogohome" />
 
 
     <TextView
-        android:id="@+id/textCriarConta"
+        android:id="@+id/textCriarPedido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="Criar nova conta"
-        android:textSize="34sp"
+        android:text="Criar Novo Pedido"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_registrar"
         android:layout_width="337dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         app:cardBackgroundColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,90 +53,118 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Campo Pedido -->
+
             <TextView
-                android:id="@+id/text_cpf"
+                android:id="@+id/text_Cadastrar_pedido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Nome:"
+                android:text="Pedido:"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editCpf"
+            <Spinner
+                android:id="@+id/spinnerPedidos"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/inputs_texts"
-                android:hint="Digite seu nome "
-                android:inputType="text"
                 android:paddingStart="16dp" />
 
-            <!-- Campo Medidas -->
+
+
             <TextView
-                android:id="@+id/text_senha"
+                android:id="@+id/text_Cadastrar_Medidas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Senha:"
+                android:text="Medidas:"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editSenha"
+                android:id="@+id/edit_Cadastrar_Medidas"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/inputs_texts"
-                android:hint="Digite sua senha"
-                android:inputType="textPassword"
-                android:paddingStart="16dp" />
-
-            <!-- Campo Valor -->
-            <TextView
-                android:id="@+id/text_telefone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Telefone:"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editTelefone"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/inputs_texts"
-                android:hint="Digite seu número"
+                android:hint="Digite a medida"
                 android:inputType="number"
                 android:paddingStart="16dp" />
 
-            <!-- Campo Quantidade -->
+
             <TextView
-                android:id="@+id/text_endereco"
+                android:id="@+id/text_Cadastrar_Valor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Endereço:"
+                android:text="Valor:"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editEndereco"
+                android:id="@+id/edit_Cadastrar_Valor"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/inputs_texts"
-                android:hint="Digite seu endereço"
-                android:inputType="text"
+                android:inputType="number"
                 android:paddingStart="16dp" />
 
 
+            <TextView
+                android:id="@+id/text_Cadastrar_Qtde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Quantidade:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_Cadastrar_Qtde"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/inputs_texts"
+                android:inputType="number"
+                android:paddingStart="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pix"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDebito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Débito"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCredito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crédito"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
             <!-- Botão Confirmar -->
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_confirmar"

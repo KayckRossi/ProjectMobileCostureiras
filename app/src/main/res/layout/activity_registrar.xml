@@ -55,9 +55,8 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Campo Pedido -->
             <TextView
-                android:id="@+id/text_cpf"
+                android:id="@+id/text_Cpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -66,7 +65,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editCpf"
+                android:id="@+id/edit_Registrar_Cpf"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
@@ -75,7 +74,7 @@
                 android:inputType="text"
                 android:paddingStart="16dp" />
 
-            <!-- Campo Medidas -->
+
             <TextView
                 android:id="@+id/text_senha"
                 android:layout_width="match_parent"
@@ -86,7 +85,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editSenha"
+                android:id="@+id/edit_Registrar_Senha"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
@@ -95,7 +94,7 @@
                 android:inputType="textPassword"
                 android:paddingStart="16dp" />
 
-            <!-- Campo Valor -->
+
             <TextView
                 android:id="@+id/text_telefone"
                 android:layout_width="match_parent"
@@ -106,7 +105,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editTelefone"
+                android:id="@+id/edit_Registrar_Telefone"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
@@ -115,7 +114,7 @@
                 android:inputType="number"
                 android:paddingStart="16dp" />
 
-            <!-- Campo Quantidade -->
+
             <TextView
                 android:id="@+id/text_endereco"
                 android:layout_width="match_parent"
@@ -126,7 +125,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/editEndereco"
+                android:id="@+id/edit_Registrar_Endereco"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
@@ -138,7 +137,7 @@
 
             <!-- Botão Confirmar -->
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_confirmar"
+                android:id="@+id/btn_Registrar_confirmar"
                 android:layout_width="304dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
@@ -153,13 +152,4 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#FFE4E1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navigation_botton_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
